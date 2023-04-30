@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamCar</title>
+    <script src="./scripts/mainScreen.js" defer></script>
+    <script src="./scripts/form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@400;700&family=Josefin+Sans:wght@300;700&family=Lobster&family=Righteous&family=Roboto:wght@400;700;900&family=Satisfy&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cffd4f55a4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/components.css">
+</head>
+
+<body>
+    <header class="header section">
+        <h1 class="header__heading">DreamCar</h1>
+        <p class="header__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, excepturi.</p>
+        <a href="#offers" class="header__btn btn-special-animation">Poznaj oferte</a>
+        <div class="white-block white-block-left"></div>
+    </header>
+    <main class="main">
+        <section class="about-us section-padding section">
+            <div class="wrapper">
+                <h2 class="section-heading">O nas</h2>
+                <div class="about-us__box">
+                    <div class="about-us__box-text">
+                        <p class="about-us__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut esse quo
+                            fugiat? Error, tempora eligendi laudantium dolore non quis consequatur atque asperiores
+                            dignissimos repellendus iure corrupti exercitationem voluptas impedit! Facilis odit
+                            obcaecati veniam praesentium nemo? Et quidem voluptates quasi in.
+                        </p>
+                        <br>
+                        <p class="about-us__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur
+                            pariatur nulla aspernatur quo modi ex blanditiis ducimus illo molestias ab mollitia corporis
+                            laboriosam numquam accusamus sapiente placeat repudiandae porro omnis neque magnam saepe
+                            deleniti quam, ipsum debitis! Vel similique obcaecati tempore officia labore est fugit quos,
+                            quod impedit, itaque perspiciatis?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="offers section-padding section" id="offers">
+            <div class="white-block white-block-right"></div>
+            <div class="white-block white-block-left"></div>
+
+            <h2 class="section-heading">
+                Nasza oferta
+            </h2>
+            <label for="cars" class="brand_cars">Marka:</label>
+            <select name="cars" id="cars" onchange="selectedBrand()">
+                <option value="mercedes" selected>Mercedes</option>
+                <option value="audi">Audi</option>
+                <option value="porsche">Porsche</option>
+            </select>
+
+            <div class="wrapper">
+                <div id="car_mercedes" class="offers__box">
+                    <div class="offers__option">
+                        <img src="./img/mercedes1.jpg" alt="Żółty samochód marki Mercedes" class="offers__option-img">
+                        <div class="offers__option-info">
+                            <h3 class="offers__option-heading">
+                                Mercedes-Benz GT
+                            </h3>
+                            <p class="offers__option-details">Rocznik: 2019</p>
+                            <p class="offers__option-details">Przebieg: 35 000km</p>
+                            <p class="offers__option-details">Moc silnika: 585KM</p>
+                            <p class="offers__option-details">750 000 zł</p>
+                            <button class="offers__option-btn btn-special-animation">Formularz
+                                zakupu</button>
+                        </div>
+                    </div>
+                    <div class="offers__option">
+                        <img src="./img/mercedes2.jpg" alt="Biały samochód marki Mercedes" class="offers__option-img">
+                        <div class="offers__option-info">
+                            <h3 class="offers__option-heading">
+                                Mercedes-Benz CLS
+                            </h3>
+                            <p class="offers__option-details">Rocznik: 2020</p>
+                            <p class="offers__option-details">Przebieg: 65 000km</p>
+                            <p class="offers__option-details">Moc silnika: 265KM</p>
+                            <p class="offers__option-details">290 000 zł</p>
+                            <button class="offers__option-btn btn-special-animation">Formularz
+                                zakupu</button>
+                        </div>
+                    </div>
+                    <div class="offers__option">
+                        <img src="./img/mercedes3.jpg" alt="Czarny samochód marki Mercedes" class="offers__option-img">
+                        <div class="offers__option-info">
+                            <h3 class="offers__option-heading">
+                                Mercedes-Benz G
+                            </h3>
+                            <p class="offers__option-details">Rocznik: 2018</p>
+                            <p class="offers__option-details">Przebieg: 15 000km</p>
+                            <p class="offers__option-details">Moc silnika: 500KM</p>
+                            <p class="offers__option-details">560 000 zł</p>
+                            <button class="offers__option-btn btn-special-animation">Formularz
+                                zakupu</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="car_audi" class="offers__box" style="display: none;">
+                    <div class=" offers__option">
+                        <img src="./img/audi1.jpg" alt="Niebeski samochód marki Audi" class="offers__option-img">
+                        <div class="offers__option-info">
+                            <h3 class="offers__option-heading">
+                                Audi RS4
+                            </h3>
+                            <p class="offers__option-details">Rocznik: 2013</p>
+                            <p class="offers__option-details">Przebieg: 225 000km</p>
+                            <p class="offers__option-details">Moc silnika: 450KM</p>
+                            <p class="offers__option-details">150 000 zł</p>
+                            <button class="offers__option-btn btn-special-animation">Formularz
+                                zakupu</button>
+                        </div>
+                    </div>
+                    <div class="offers__option">
+                        <img src="./img/audi2.jpg" alt="Niebieski samochód marki Audi" class="offers__option-img">
+                        <div class="offers__option-info">
+                            <h3 class="offers__option-heading">
+                                Audi R8
+                            </h3>
+                            <p class="offers__option-details">Rocznik: 2020</p>
+                            <p class="offers__option-details">Przebieg: 10 000km</p>
+                            <p class="offers__option-details">Moc silnika: 540KM</p>
+                            <p class="offers__option-details">700 000 zł</p>
+                            <button class="offers__option-btn btn-special-animation">Formularz
+                                zakupu</button>
+                        </div>
+                    </div>
+                    <div class="offers__option">
+                        <img src="./img/audi3.jpg" alt="Czarny samochód marki Audi" class="offers__option-img">
+                        <div class="offers__option-info">
+                            <h3 class="offers__option-heading">
+                                Audi A3
+                            </h3>
+                            <p class="offers__option-details">Rocznik: 2019</p>
+                            <p class="offers__option-details">Przebieg: 110 000km</p>
+                            <p class="offers__option-details">Moc silnika: 150KM</p>
+                            <p class="offers__option-details">105 000 zł</p>
+                            <button class="offers__option-btn btn-special-animation">Formularz
+                                zakupu</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="car_porsche" class="offers__box" style="display: none;">
+                    <div class="offers__option">
+                        <img src="./img/porsche1.jpg" alt="Czerwony samochód marki Porsche" class="offers__option-img">
+                        <div class="offers__option-info">
+                            <h3 class="offers__option-heading">
+                                Porsche 911 GT3
+                            </h3>
+                            <p class="offers__option-details">Rocznik: 2018</p>
+                            <p class="offers__option-details">Przebieg: 25 000km</p>
+                            <p class="offers__option-details">Moc silnika: 500KM</p>
+                            <p class="offers__option-details">800 000 zł</p>
+                            <button class="offers__option-btn btn-special-animation">Formularz
+                                zakupu</button>
+                        </div>
+                    </div>
+                    <div class="offers__option">
+                        <img src="./img/porsche2.jpg" alt="Biały samochód marki Porsche" class="offers__option-img">
+                        <div class="offers__option-info">
+                            <h3 class="offers__option-heading">
+                                Porsche Cayenne
+                            </h3>
+                            <p class="offers__option-details">Rocznik: 2017</p>
+                            <p class="offers__option-details">Przebieg: 85 000km</p>
+                            <p class="offers__option-details">Moc silnika: 300KM</p>
+                            <p class="offers__option-details">250 000 zł</p>
+                            <button class="offers__option-btn btn-special-animation">Formularz
+                                zakupu</button>
+                        </div>
+                    </div>
+                    <div class="offers__option">
+                        <img src="./img/porsche3.jpg" alt="Biały samochód marki Porsche" class="offers__option-img">
+                        <div class="offers__option-info">
+                            <h3 class="offers__option-heading">
+                                Porsche 911 GT2-RS
+                            </h3>
+                            <p class="offers__option-details">Rocznik: 2018</p>
+                            <p class="offers__option-details">Przebieg: 41 000km</p>
+                            <p class="offers__option-details">Moc silnika: 700KM</p>
+                            <p class="offers__option-details">1 600 000 zł</p>
+                            <button class="offers__option-btn btn-special-animation">Formularz
+                                zakupu</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews section-padding section white-section" id="reviews">
+            <h2 class="section-heading">Opinie</h2>
+            <div class="wrapper">
+                <div class="reviews__boxes">
+                    <div class="reviews__box-img">
+                        <img src="./img/reviews_man.jpg" alt="Grzegorz Walczewicz">
+                    </div>
+                    <div class="reviews__box-info">
+                        <p class="reviews__box-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore
+                            omnis dolores nam laboriosam itaque assumenda!</p>
+                        <strong>Grzegorz Walczewicz</strong>
+                    </div>
+                </div>
+                <div class="reviews__boxes">
+                    <div class="reviews__box-img">
+                        <img src="./img/reviews_woman.jpg" alt="Marianna Jankowska">
+                    </div>
+                    <div class="reviews__box-info">
+                        <p class="reviews__box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                            iure debitis dolorem magnam natus maiores optio eum temporibus.
+                        </p>
+                        <strong>Marianna Jankowska</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="contact">
+
+        <!-- <div class="white-block white-block-left"></div>
+        <div class="white-block white-block-right"></div> -->
+        <h2 class="section-heading">Kontakt</h2>
+        <div class="wrapper">
+            <div class="footer__boxes">
+                <div class="footer__box">
+                    <p class="footer__box-text"><strong>Numer telefonu:</strong> +00-123-456-789</p>
+                    <p><strong>Adres e-mail:</strong> contact@dreamcar.com</p>
+                </div>
+
+                <div class="footer__box">
+                    <a href="#" class="footer__box-link"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#" class="footer__box-link"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="#" class="footer__box-link"><i class="fa-brands fa-square-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <p class="footer__text">&copy; <span class="footer__year" id="currentYear"></span> DreamCar </p>
+    </footer>
+</body>
+
+</html>

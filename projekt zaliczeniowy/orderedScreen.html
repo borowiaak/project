@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamCar Dziękujemy za zakup!</title>
+    <!-- <script src="./scripts/orderedScreen.js" defer></script> -->
+    <script src="./scripts/mainScreen.js" defer></script>
+    <script src="./scripts/form.js" defer></script>
+    <script src="./scripts/orderedScreen.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@400;700&family=Josefin+Sans:wght@300;700&family=Lobster&family=Righteous&family=Roboto:wght@400;700;900&family=Satisfy&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cffd4f55a4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/orderedScreen.css">
+</head>
+
+<body>
+    <section class="ordered section-padding section white-section" id="ordered">
+        <div>
+            <h2 class="section-heading">Dziękujemy za zakup auta <em><span id="orderedCarName"></span></em></h2>
+            <div class="ordered__summary">
+                <div class="ordered__summary-car_photo">
+                    <img src="" alt="" id="orderedCarPhoto">
+                </div>
+                <div class="ordered__summary-delivery">
+                    <p>Twoje auta będzie gotowe do odbioru dnia <strong><span id="orderedDateDelivery"></span></strong>
+                    </p>
+                </div>
+                <div class="ordered__summary-details">
+                    <label for="summary">Wybrane akcesoria: <span id="orderedAccessories"></span></label>
+                </div>
+                <div class="ordered__summary-payment_method">
+                    <p>Sposób płatności: <span id="orderedPaymentMethod"></span></p>
+                </div>
+                <div class="ordered__summary-final_price">
+                    <p><strong> Cena całkowita auta: <span id="orderedCarPrice"></span></strong></p>
+                </div>
+                <button class="ordered__summary-return-btn btn-special-animation" id="firstPageBtn">Powrót do strony
+                    głównej</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

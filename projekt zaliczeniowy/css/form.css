@@ -1,0 +1,59 @@
+.section-padding {
+  padding: 2em 2em;
+}
+
+.form .section-heading {
+  margin-bottom: 1.6em;
+}
+.form__data-name, .form__data-financing, .form__date-delivery, .form__data-accessory, .form__data-selected_car {
+  padding-bottom: 1em;
+}
+.form__data-accessory label {
+  display: block;
+  margin: 1em 0 1em;
+}
+.form__data-final_price {
+  padding-top: 2em;
+}
+.form__order-btn {
+  margin-top: 1.6em;
+  padding: 0.8em;
+  width: 25%;
+  color: #fff;
+  background-color: rgba(119, 10, 115, 0.7529411765);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.form__order-btn:hover {
+  background-color: rgba(81, 6, 79, 0.8745098039);
+}
+.form__data-return-btn {
+  margin-top: 2em;
+  padding: 0.8em;
+  width: 25%;
+  left: 50%;
+  color: #fff;
+  background-color: rgba(119, 10, 115, 0.7529411765);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.form__data-return-btn::before {
+  background-color: rgba(81, 6, 79, 0.7529411765);
+}
+.form__data-final_price {
+  position: relative;
+}
+.form__buttons {
+  position: relative;
+}
+.form__buttons .not_visible {
+  position: absolute;
+  margin-top: 1em;
+  color: red;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}/*# sourceMappingURL=form.css.map */

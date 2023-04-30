@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamCar Formularz zakupu</title>
+    <script src="./scripts/mainScreen.js" defer></script>
+    <script src="./scripts/form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@400;700&family=Josefin+Sans:wght@300;700&family=Lobster&family=Righteous&family=Roboto:wght@400;700;900&family=Satisfy&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cffd4f55a4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/form.css">
+</head>
+
+<body>
+    <section class="form section-padding section white-section" id="myForm">
+        <div>
+            <h2 class="section-heading">Formularz zakupu</h2>
+            <form class="form__data">
+                <div class="form__data-selected_car">
+                    <p>Auto: <strong><span id="selected_car_heading"></span></strong></p>
+                </div>
+                <div class="form__data-name">
+                    <label>*Imię i nazwisko:</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="form__data-financing">
+                    <label>*Finansowanie: </label>
+                    <input type="radio" id="leasing" name="financing" class="form__data-financing-checked">
+                    <label for="leasing">Leasing</label>
+                    <input type="radio" id="cash" name="financing" class="form__data-financing-checked">
+                    <label for="cash">Gotówka</label>
+                </div>
+                <div class="form__date-delivery">
+
+                    <p>Data dostawy: <strong><span id="dateDelivery"></span></strong></p>
+
+                </div>
+                <div class="form__data-accessory">
+                    <label>Akcesoria do auta:</label>
+
+                    <label for="rims"><input type="checkbox" name="rims" id="rims" class="form__data-accessory-checked">
+                        <span>Felgi</span> - cena 12.000
+                        zł</label>
+
+                    <label for="leater_seats"><input type="checkbox" name="leater_seats" id="leater_seats"
+                            class="form__data-accessory-checked"> <span>Skórzane
+                            fotele</span> - cena 8.000 zł</label>
+
+                    <label for="ambilight"></label><input type="checkbox" name="ambilight" id="ambilight"
+                        class="form__data-accessory-checked"> <span>Ambilight</span> - cena 3.500 zł</label>
+
+                    <label for="warranty"></label><input type="checkbox" name="warranty" id="warranty"
+                        class="form__data-accessory-checked"> <span>Dodatkowa
+                        gwarancja</span> - cena 5.000 zł</label>
+                </div>
+
+                <div class="form__data-final_price">
+                    <p><strong>Cena auta: </strong><span id="final_price"></span></p>
+                </div>
+                <div class="form__buttons">
+                    <input type="button" value="Zamów" id="order" class="form__order-btn btn-special-animation">
+                    <p id="login_error" class=" not_visible" style="display: none;">Incorrect data</p>
+                    <button type="button" class="form__data-return-btn btn-special-animation" id="returnButton">Powrót
+                        do
+                        wyboru</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>

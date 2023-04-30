@@ -1,0 +1,47 @@
+.section-padding {
+  padding: 2em 2em;
+}
+
+.ordered .section-heading {
+  margin-bottom: 1.6em;
+}
+.ordered__summary {
+  position: relative;
+  margin-bottom: 2em;
+}
+.ordered__summary-car_photo, .ordered__summary-delivery, .ordered__summary-details, .ordered__summary-payment_method, .ordered__summary-final_price {
+  padding-bottom: 1em;
+}
+.ordered__summary-car_photo {
+  padding-bottom: 2em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.ordered__summary-car_photo img {
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+.ordered__summary-return-btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.8em;
+  color: #fff;
+  background-color: rgba(119, 10, 115, 0.7529411765);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.ordered__summary-return-btn::before {
+  background-color: rgba(81, 6, 79, 0.8745098039);
+}
+
+@media (min-width: 576px) {
+  .ordered__summary-car_photo img {
+    max-width: 576px;
+  }
+}/*# sourceMappingURL=orderedScreen.css.map */
